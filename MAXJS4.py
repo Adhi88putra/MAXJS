@@ -810,7 +810,22 @@ def bot(op):
                                             kk.inviteIntoGroup(op.param1,[op.param3])
                                             cl.acceptGroupInvitation(op.param1)
                                         except:
-                                            pass
+                                            try:
+                                                kc.kickoutFromGroup(op.param1,[op.param2])
+                                                kc.inviteIntoGroup(op.param1,[op.param3])
+                                                cl.acceptGroupInvitation(op.param1)
+                                            except:
+                                                try:
+                                                    kk.kickoutFromGroup(op.param1,[op.param2])
+                                                    kc.inviteIntoGroup(op.param1,[op.param3])
+                                                    cl.acceptGroupInvitation(op.param1)
+                                                except:
+                                                    try:
+                                                        ki.kickoutFromGroup(op.param1,[op.param2])
+                                                        kk.inviteIntoGroup(op.param1,[op.param3])
+                                                        cl.acceptGroupInvitation(op.param1)
+                                                    except:
+                                                        pass
                 return
 
             if Amid in op.param3:
@@ -864,7 +879,22 @@ def bot(op):
                                             kc.inviteIntoGroup(op.param1,[op.param3])
                                             ki.acceptGroupInvitation(op.param1)
                                         except:
-                                            pass
+                                            try:
+                                                kc.kickoutFromGroup(op.param1,[op.param2])
+                                                kc.inviteIntoGroup(op.param1,[op.param3])
+                                                ki.acceptGroupInvitation(op.param1)
+                                            except:
+                                                try:
+                                                    kk.kickoutFromGroup(op.param1,[op.param2])
+                                                    kc.inviteIntoGroup(op.param1,[op.param3])
+                                                    ki.acceptGroupInvitation(op.param1)
+                                                except:
+                                                    try:
+                                                        kc.kickoutFromGroup(op.param1,[op.param2])
+                                                        kk.inviteIntoGroup(op.param1,[op.param3])
+                                                        ki.acceptGroupInvitation(op.param1)
+                                                    except:
+                                                        pass
                 return
 
             if Bmid in op.param3:
@@ -918,7 +948,22 @@ def bot(op):
                                             kc.inviteIntoGroup(op.param1,[op.param3])
                                             kk.acceptGroupInvitation(op.param1)
                                         except:
-                                            pass
+                                            try:
+                                                kc.kickoutFromGroup(op.param1,[op.param2])
+                                                kc.inviteIntoGroup(op.param1,[op.param3])
+                                                kk.acceptGroupInvitation(op.param1)
+                                            except:
+                                                try:
+                                                    kc.kickoutFromGroup(op.param1,[op.param2])
+                                                    kc.inviteIntoGroup(op.param1,[op.param3])
+                                                    kk.acceptGroupInvitation(op.param1)
+                                                except:
+                                                    try:
+                                                        ki.kickoutFromGroup(op.param1,[op.param2])
+                                                        kc.inviteIntoGroup(op.param1,[op.param3])
+                                                        kk.acceptGroupInvitation(op.param1)
+                                                    except:
+                                                        pass
                 return
 
             if Cmid in op.param3:
@@ -972,7 +1017,22 @@ def bot(op):
                                             ki.inviteIntoGroup(op.param1,[op.param3])
                                             kc.acceptGroupInvitation(op.param1)
                                         except:
-                                            pass
+                                            try:
+                                                kc.kickoutFromGroup(op.param1,[op.param2])
+                                                kc.inviteIntoGroup(op.param1,[op.param3])
+                                                kc.acceptGroupInvitation(op.param1)
+                                            except:
+                                                try:
+                                                    kk.kickoutFromGroup(op.param1,[op.param2])
+                                                    ki.inviteIntoGroup(op.param1,[op.param3])
+                                                    kc.acceptGroupInvitation(op.param1)
+                                                except:
+                                                    try:
+                                                        ki.kickoutFromGroup(op.param1,[op.param2])
+                                                        kk.inviteIntoGroup(op.param1,[op.param3])
+                                                        kc.acceptGroupInvitation(op.param1)
+                                                    except:
+                                                        pass
                 return
 
             if admin in op.param3:
@@ -1328,42 +1388,42 @@ def bot(op):
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "👿【さัএπัஞ✵ບิथℓℓҨतΩ】\nPŘØŤĘČŤÎØŇ\n"
-                                if wait["sticker"] == True: md+="😈 Sticker「ON」\n"
-                                else: md+="😈 Sticker「OFF」\n"
-                                if wait["contact"] == True: md+="😈 Contact「ON」\n"
-                                else: md+="😈 Contact「OFF」\n"
-                                if wait["talkban"] == True: md+="😈 Talkban「ON」\n"
-                                else: md+="😈 Talkban「OFF」\n"
-                                if wait["Mentionkick"] == True: md+="😈 Notag「ON」\n"
-                                else: md+="😈 Notag「OFF」\n"
-                                if wait["detectMention"] == True: md+="😈 Respon「ON」\n"
-                                else: md+="😈 Respon「OFF」\n"
-                                if wait["autoJoin"] == True: md+="😈 Autojoin「ON」\n"
-                                else: md+="😈 Autojoin「OFF」\n"
-                                if wait["autoAdd"] == True: md+="😈 Autoadd「ON」\n"
-                                else: md+="😈 Autoadd「OFF」\n"
-                                if msg.to in welcome: md+="😈 Welcome「ON」\n"
-                                else: md+="😈 Welcome「OFF」\n"
-                                if wait["autoLeave"] == True: md+="😈 Autoleave「ON」\n"
-                                else: md+="😈 Autoleave「OFF」\n"
-                                if msg.to in protectqr: md+="😈 Protecturl「ON」\n"
-                                else: md+="😈 Protecturl「OFF」\n"
-                                if msg.to in protectjoin: md+="😈 Protectjoin「ON」\n"
-                                else: md+="😈 Protectjoin「OFF」\n"
-                                if msg.to in protectkick: md+="😈 Protectkick「ON」\n"
-                                else: md+="😈 Protectkick「OFF」\n"
-                                if msg.to in protectcancel: md+="😈 Protectcancel「ON」\n"
-                                else: md+="😈 Protectcancel「OFF」\n"
-                                if msg.to in protectantijs: md+="😈 Projs「ON」\n"
-                                else: md+="😈 Projs「OFF」\n"  
-                                if msg.to in ghost: md+="😈 Ghost「ON」\n"
-                                else: md+="😈 Ghost「OFF」\n"                                   
+                                md = "-▬▬▬▬▬▬▬▬▬▬▬▬\n         😈 S T A T U S 😈\n-▬▬▬▬▬▬▬▬▬▬▬▬\n"
+                                if wait["sticker"] == True: md+="┃😈┃ ✔️ Sticker「ON」\n"
+                                else: md+="┃😈┃ ✖ Sticker「OFF」\n"
+                                if wait["contact"] == True: md+="┃😈┃ ✔️ Contact「ON」\n"
+                                else: md+="┃😈┃ ✖ Contact「OFF」\n"
+                                if wait["talkban"] == True: md+="┃😈┃ ✔️ Talkban「ON」\n"
+                                else: md+="┃😈┃ ✖ Talkban「OFF」\n"
+                                if wait["Mentionkick"] == True: md+="┃😈┃ ✔️ Notag「ON」\n"
+                                else: md+="┃😈┃ ✖ Notag「OFF」\n"
+                                if wait["detectMention"] == True: md+="┃😈┃ ✔️ Respon「ON」\n"
+                                else: md+="┃😈┃ ✖ Respon「OFF」\n"
+                                if wait["autoJoin"] == True: md+="┃😈┃ ✔️ Autojoin「ON」\n"
+                                else: md+="┃😈┃ ✖ Autojoin「OFF」\n"
+                                if wait["autoAdd"] == True: md+="┃😈┃ ✔️ Autoadd「ON」\n"
+                                else: md+="┃😈┃ ✖ Autoadd「OFF」\n"
+                                if msg.to in welcome: md+="┃😈┃ ✔️ Welcome「ON」\n"
+                                else: md+="┃😈┃ ✖ Welcome「OFF」\n"
+                                if wait["autoLeave"] == True: md+="┃😈┃ ✔️ Autoleave「ON」\n"
+                                else: md+="┃😈┃ ✖ Autoleave「OFF」\n"
+                                if msg.to in protectqr: md+="┃😈┃ ✔️ Protecturl「ON」\n"
+                                else: md+="┃😈┃ ✖ Protecturl「OFF」\n"
+                                if msg.to in protectjoin: md+="┃😈┃ ✔️ Protectjoin「ON」\n"
+                                else: md+="┃😈┃ ✖ Protectjoin「OFF」\n"
+                                if msg.to in protectkick: md+="┃😈┃ ✔️ Protectkick「ON」\n"
+                                else: md+="┃😈┃ ✖ Protectkick「OFF」\n"
+                                if msg.to in protectcancel: md+="┃😈┃ ✔️ Protectcancel「ON」\n"
+                                else: md+="┃😈┃ ✖ Protectcancel「OFF」\n"
+                                if msg.to in protectantijs: md+="┃😈┃ ✔️ Projs「ON」\n"
+                                else: md+="┃😈┃ ✖ Projs「OFF」\n"  
+                                if msg.to in ghost: md+="┃😈┃ ✔️ Ghost「ON」\n"
+                                else: md+="┃😈┃ ✖ Ghost「OFF」\n"                                   
                                 cl.sendMessage(msg.to, md+"\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
-                                cl.sendText(msg.to,"Creator Bot 【さัএπัஞ✵ບิथℓℓҨतΩ】") 
+                                cl.sendText(msg.to,"Creator Bot\n【さัএπัஞ✵ບิथℓℓҨतΩ】") 
                                 ma = ""
                                 for i in creator:
                                     ma = cl.getContact(i)
