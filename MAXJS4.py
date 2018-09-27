@@ -2542,7 +2542,7 @@ def bot(op):
                             zodiak = data["data"]["zodiak"]
                             cl.sendMessage(msg.to,"🐯 I N F O R M A S I 🐯\n\n"+"🐯 Date Of Birth : "+lahir+"\n🐯 Age : "+usia+"\n🐯 Ultah : "+ultah+"\n🐯 Zodiak : "+zodiak)
 
-                        elif cmd.startswith("spamtag: "):
+                        elif cmd.startswith("Jumlah: "):
                           if wait["selfbot"] == True:
                            if msg._from in admin:
                                 proses = text.split(":")
