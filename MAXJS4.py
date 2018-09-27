@@ -653,7 +653,7 @@ def bot(op):
                         pass
                     else:
                         cl.sendText(op.param1, wait["message"])
-                        cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+                       cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
 
         if op.type == 19:
             if op.param1 in protectkick:
@@ -1364,7 +1364,7 @@ def bot(op):
                             if msg._from in admin:
                                helpMessage = help()
                                cl.sendMessage(msg.to, str(helpMessage))
-                               cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+                               cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
                                                      
                         if cmd == "self on":
                             if msg._from in admin:
@@ -1381,7 +1381,7 @@ def bot(op):
                             if msg._from in admin:
                                helpMessage1 = helpbot()
                                cl.sendMessage(msg.to, str(helpMessage1))
-                               cl.sendContact(op.param1, "u4862fe4b182b2fd194a3108e2f3662e8")
+                               cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
 
                         elif cmd == "status":
                           if wait["selfbot"] == True:
