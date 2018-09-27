@@ -302,129 +302,155 @@ def command(text):
 def help():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = "╔════ HELP MENU ════╗\n" + \
-                  "╠❂➣ " + key + "Me\n" + \
-                  "╠❂➣ " + key + "Mid「@」\n" + \
-                  "╠❂➣ " + key + "Info「@」\n" + \
-                  "╠❂➣ " + key + "Nk「@」\n" + \
-                  "╠❂➣ " + key + "Kick1「@」\n" + \
-                  "╠❂➣ " + key + "Mybot\n" + \
-                  "╠❂➣ " + key + "Status\n" + \
-                  "╠❂➣ " + key + "About\n" + \
-                  "╠❂➣ " + key + "Restart\n" + \
-                  "╠❂➣ " + key + "Runtime\n" + \
-                  "╠❂➣ " + key + "Creator\n" + \
-                  "╠❂➣ " + key + "Speed/Sp\n" + \
-                  "╠❂➣ " + key + "Sprespon\n" + \
-                  "╠❂➣ " + key + "Tagall\n" + \
-                  "╠❂➣ " + key + "Joinall\n" + \
-                  "╠❂➣ " + key + "Byeall\n" + \
-                  "╠❂➣ " + key + "Byeme\n" + \
-                  "╠❂➣ " + key + "Leave「Namagrup」\n" + \
-                  "╠❂➣ " + key + "Ginfo\n" + \
-                  "╠❂➣ " + key + "Open\n" + \
-                  "╠❂➣ " + key + "Close\n" + \
-                  "╠❂➣ " + key + "Url grup\n" + \
-                  "╠❂➣ " + key + "Gruplist\n" + \
-                  "╠❂➣ " + key + "Infogrup「angka」\n" + \
-                  "╠❂➣ " + key + "Infomem「angka」\n" + \
-                  "╠❂➣ " + key + "Remove chat\n" + \
-                  "╠❂➣ " + key + "Lurking「on/off」\n" + \
-                  "╠❂➣ " + key + "Lurkers\n" + \
-                  "╠❂➣ " + key + "Sider「on/off」\n" + \
-                  "╠❂➣ " + key + "Updatefoto\n" + \
-                  "╠❂➣ " + key + "Updategrup\n" + \
-                  "╠❂➣ " + key + "Updatebot\n" + \
-                  "╠❂➣ " + key + "Broadcast:「Text」\n" + \
-                  "╠❂➣ " + key + "Setkey「New Key」\n" + \
-                  "╠❂➣ " + key + "Mykey\n" + \
-                  "╠❂➣ " + key + "Resetkey\n" + \
-                  "╠❂➣ " + key + "ID line:「Id Line nya」\n" + \
-                  "╠❂➣ " + key + "Sholat:「Nama Kota」\n" + \
-                  "╠❂➣ " + key + "Cuaca:「Nama Kota」\n" + \
-                  "╠❂➣ " + key + "Lokasi:「Nama Kota」\n" + \
-                  "╠❂➣ " + key + "Music:「Judul Lagu」\n" + \
-                  "╠❂➣ " + key + "Lirik:「Judul Lagu」\n" + \
-                  "╠❂➣ " + key + "Ytmp3:「Judul Lagu」\n" + \
-                  "╠❂➣ " + key + "Ytmp4:「Judul Video」\n" + \
-                  "╠❂➣ " + key + "Profileig:「Nama IG」\n" + \
-                  "╠❂➣ " + key + "Cekdate:「tgl-bln-thn」\n" + \
-                  "╠❂➣ " + key + "Jumlah:「angka」\n" + \
-                  "╠❂➣ " + key + "Spamtag「@」\n" + \
-                  "╠❂➣ " + key + "Spamcall:「jumlahnya」\n" + \
-                  "╠❂➣ " + key + "Spamcall\n" + \
-                  "╠❂➣ " + key + "Notag「on/off」\n" + \
-                  "╠❂➣ " + key + "Semuapro「on/off」\n" + \
-                  "╠❂➣ " + key + "Protecturl「on/off」\n" + \
-                  "╠❂➣ " + key + "Protectjoin「on/off」\n" + \
-                  "╠❂➣ " + key + "Protectkick「on/off」\n" + \
-                  "╠❂➣ " + key + "Protectcancel「on/off」\n" + \
-                  "╠❂➣ " + key + "Protectjs「on/off」\n" + \
-                  "╠❂➣ " + key + "Maxjs stay\n" + \
-                  "╠❂➣ " + key + "Ghost「on/off」\n" + \
-                  "╠❂➣ " + key + "Sticker「on/off」\n" + \
-                  "╠❂➣ " + key + "Respon「on/off」\n" + \
-                  "╠❂➣ " + key + "Contact「on/off」\n" + \
-                  "╠❂➣ " + key + "Autojoin「on/off」\n" + \
-                  "╠❂➣ " + key + "Autoadd「on/off」\n" + \
-                  "╠❂➣ " + key + "Welcome「on/off」\n" + \
-                  "╠❂➣ " + key + "Autoleave「on/off」\n" + \
-                  "╠❂➣ " + key + "Admin:on\n" + \
-                  "╠❂➣ " + key + "Admin:repeat\n" + \
-                  "╠❂➣ " + key + "Staff:on\n" + \
-                  "╠❂➣ " + key + "Staff:repeat\n" + \
-                  "╠❂➣ " + key + "Bot:on\n" + \
-                  "╠❂➣ " + key + "Bot:repeat\n" + \
-                  "╠❂➣ " + key + "Adminadd「@」\n" + \
-                  "╠❂➣ " + key + "Admindell「@」\n" + \
-                  "╠❂➣ " + key + "Staffadd「@」\n" + \
-                  "╠❂➣ " + key + "Staffdell「@」\n" + \
-                  "╠❂➣ " + key + "Botadd「@」\n" + \
-                  "╠❂➣ " + key + "Botdell「@」\n" + \
-                  "╠❂➣ " + key + "Refresh\n" + \
-                  "╠❂➣ " + key + "Listbot\n" + \
-                  "╠❂➣ " + key + "Listadmin\n" + \
-                  "╠❂➣ " + key + "Listprotect\n" + \
-                  "╚═ BY:【さัএπัஞ✵ບิथℓℓҨतΩ】═╝"
+    helpMessage = """╔════════════════
+╠❂【さัএπัஞ✵ບิथℓℓҨतΩ】
+╚════════════════
+╔════════════════
+╠❂         🐯 SELF 🐯              
+╠════════════════
+╠❂➣ Me
+╠❂➣ Mid「@」
+╠❂➣ Info「@」
+╠❂➣ kk「@」
+╠❂➣ k「@」
+╠❂➣ Mybot
+╠❂➣ Status
+╠❂➣ About
+╠❂➣ Restart
+╠❂➣ Runtime
+╠❂➣ Creator
+╠❂➣ Speed/Sp
+╠❂➣ Sprespon
+╠❂➣ Tagall
+╠❂➣ Joinall
+╠❂➣ Byeall
+╠❂➣ Byeme
+╠❂➣ Leave「Namagrup」
+╠❂➣ Ginfo
+╠❂➣ Open
+╠❂➣ Close
+╠❂➣ Url grup
+╠❂➣ Gruplist
+╠❂➣ Infogrup「angka」
+╠❂➣ Infomem「angka」
+╠❂➣ Remove chat
+╠❂➣ Lurking「on/off」
+╠❂➣ Lurkers
+╠❂➣ Sider「on/off」
+╠❂➣ Updatefoto
+╠❂➣ Updategrup
+╠❂➣ Updatebot
+╠❂➣ Broadcast:「Text」
+╠❂➣ Setkey「New Key」
+╠❂➣ Mykey
+╠❂➣ Resetkey
+╠❂➣ ID line:「Id Line nya」
+╠❂➣ Sholat:「Nama Kota」
+╠❂➣ Cuaca:「Nama Kota」
+╠❂➣ Lokasi:「Nama Kota」
+╠❂➣ Music:「Judul Lagu」
+╠❂➣ Lirik:「Judul Lagu」
+╠❂➣ Ytmp3:「Judul Lagu」
+╠❂➣ Ytmp4:「Judul Video」
+╠❂➣ Profileig:「Nama IG」
+╠❂➣ Cekdate:「tgl-bln-thn」
+╠❂➣ Jumlah:「angka」
+╠❂➣ Spamtag「@」
+╠❂➣ Spamcall:「jumlahnya」
+╠❂➣ Spamcall
+╠════════════════
+╠❂      🐯 PROTECT 🐯        
+╠════════════════
+╠❂➣ Notag「on/off」
+╠❂➣ Semuapro「on/off」
+╠❂➣ Protecturl「on/off」
+╠❂➣ Protectjoin「on/off」
+╠❂➣ Protectkick「on/off」
+╠❂➣ Protectcancel「on/off」
+╠❂➣ Projs「on/off」
+╠❂➣ Projs stay
+╠❂➣ Ghost「on/off」
+╠════════════════
+╠❂       🐯 STATUS 🐯          
+╠════════════════
+╠❂➣ Sticker「on/off」
+╠❂➣ Respon「on/off」
+╠❂➣ Contact「on/off」
+╠❂➣ Autojoin「on/off」
+╠❂➣ Autoadd「on/off」
+╠❂➣ Welcome「on/off」
+╠❂➣ Autoleave「on/off」
+╠════════════════
+╠❂        🐯 ADMIN 🐯           
+╠════════════════
+╠❂➣ Admin:on
+╠❂➣ Admin:repeat
+╠❂➣ Staff:on
+╠❂➣ Staff:repeat
+╠❂➣ Bot:on
+╠❂➣ Bot:repeat
+╠❂➣ Adminadd「@」
+╠❂➣ Admindell「@」
+╠❂➣ Staffadd「@」
+╠❂➣ Staffdell「@」
+╠❂➣ Botadd「@」
+╠❂➣ Botdell「@」
+╠❂➣ Refresh
+╠❂➣ Listbot
+╠❂➣ Listadmin
+╠❂➣ Listprotect
+╚════════════════
+╔════════════════
+╠❂   [ SELFBOT-BY:MAX ]    
+╚════════════════
+"""
     return helpMessage
 
 def helpbot():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage1 = "╔═════HELP BOT═════╗\n" + \
-                  "╠❂➣ " + key + "Blc\n" + \
-                  "╠❂➣ " + key + "Ban:on\n" + \
-                  "╠❂➣ " + key + "Unban:on\n" + \
-                  "╠❂➣ " + key + "Ban「@」\n" + \
-                  "╠❂➣ " + key + "Unban「@」\n" + \
-                  "╠❂➣ " + key + "Talkban「@」\n" + \
-                  "╠❂➣ " + key + "Untalkban「@」\n" + \
-                  "╠❂➣ " + key + "Talkban:on\n" + \
-                  "╠❂➣ " + key + "Untalkban:on\n" + \
-                  "╠❂➣ " + key + "Banlist\n" + \
-                  "╠❂➣ " + key + "Talkbanlist\n" + \
-                  "╠❂➣ " + key + "Clearban\n" + \
-                  "╠❂➣ " + key + "Refresh\n" + \
-                  "╠❂➣ " + key + "Cek sider\n" + \
-                  "╠❂➣ " + key + "Cek spam\n" + \
-                  "╠❂➣ " + key + "Cek pesan \n" + \
-                  "╠❂➣ " + key + "Cek respon \n" + \
-                  "╠❂➣ " + key + "Cek welcome\n" + \
-                  "╠❂➣ " + key + "Set sider:「Text」\n" + \
-                  "╠❂➣ " + key + "Set spam:「Text」\n" + \
-                  "╠❂➣ " + key + "Set pesan:「Text」\n" + \
-                  "╠❂➣ " + key + "Set respon:「Text」\n" + \
-                  "╠❂➣ " + key + "Set welcome:「Text」\n" + \
-                  "╠❂➣ " + key + "Myname:「Nama」\n" + \
-                  "╠❂➣ " + key + "Bot1name:「Nama」\n" + \
-                  "╠❂➣ " + key + "Bot2name:「Nama」\n" + \
-                  "╠❂➣ " + key + "Bot3name:「Nama」\n" + \
-                  "╠❂➣ " + key + "Bot1up「Kirim fotonya」\n" + \
-                  "╠❂➣ " + key + "Bot2up「Kirim fotonya」\n" + \
-                  "╠❂➣ " + key + "Bot3up「Kirim fotonya」\n" + \
-                  "╠❂➣ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
-                  "╠❂➣ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
-                  "╚═ BY:【さัএπัஞ✵ບิथℓℓҨतΩ】═╝"
+    helpMessage1 = """╔════════════════
+╠❂ 【さัএπัஞ✵ບิथℓℓҨतΩ】
+╚════════════════
+╔════════════════
+╠❂       🐯 MUNU 🐯
+╠════════════════
+╠❂➣ Blc
+╠❂➣ Ban:on
+╠❂➣ Unban:on
+╠❂➣ Ban「@」
+╠❂➣ Unban「@」
+╠❂➣ Talkban「@」
+╠❂➣ Untalkban「@」
+╠❂➣ Talkban:on
+╠❂➣ Untalkban:on
+╠❂➣ Banlist
+╠❂➣ Talkbanlist
+╠❂➣ Clearban
+╠❂➣ Refresh
+╠❂➣ Cek sider
+╠❂➣ Cek spam
+╠❂➣ Cek pesan 
+╠❂➣ Cek respon 
+╠❂➣ Cek welcome
+╠❂➣ Set sider:「Text」
+╠❂➣ Set spam:「Text」
+╠❂➣ Set pesan:「Text」
+╠❂➣ Set respon:「Text」
+╠❂➣ Set welcome:「Text」
+╠❂➣ Myname:「Nama」
+╠❂➣ Bot1name:「Nama」
+╠❂➣ Bot2name:「Nama」
+╠❂➣ Bot3name:「Nama」
+╠❂➣ Bot1up「Kirim fotonya」
+╠❂➣ Bot2up「Kirim fotonya」
+╠❂➣ Bot3up「Kirim fotonya」
+╠❂➣ Gift:「Mid korban」「Jumlah」
+╠❂➣ Spam:「Mid korban」「Jumlah」
+╔════════════════
+╠❂  [ SELFBOT-BY:MAX ]
+╚════════════════
+"""
     return helpMessage1
 
 def bot(op):
@@ -2661,22 +2687,22 @@ def bot(op):
 
                         elif 'Projs ' in msg.text:
                            if msg._from in admin:
-                              spl = msg.text.replace('Maxjs ','')
+                              spl = msg.text.replace('Projs ','')
                               if spl == 'on':
                                   if msg.to in protectantijs:
-                                       msgs = "Max JS sudah aktif"
+                                       msgs = "Pro JS sudah aktif"
                                   else:
                                        protectantijs.append(msg.to)
                                        ginfo = cl.getGroup(msg.to)
-                                       msgs = "Max JS Diaktifkan\nDi Group : " +str(ginfo.name)
+                                       msgs = "Pro JS Diaktifkan\nDi Group : " +str(ginfo.name)
                                   cl.sendMessage(msg.to, "「Diaktifkan」\n" + msgs)
                               elif spl == 'off':
                                     if msg.to in protectantijs:
                                          protectantijs.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
-                                         msgs = "Max JS Dinonaktifkan\nDi Group : " +str(ginfo.name)
+                                         msgs = "Pro JS Dinonaktifkan\nDi Group : " +str(ginfo.name)
                                     else:
-                                         msgs = "Max JS Sudah Tidak Aktif"
+                                         msgs = "Pro JS Sudah Tidak Aktif"
                                     cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)
                                     
                         elif 'Ghost ' in msg.text:
@@ -2746,7 +2772,7 @@ def bot(op):
                                     cl.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)
 
 #===========KICKOUT============#
-                        elif ("Nk " in msg.text):
+                        elif ("Kk " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2771,7 +2797,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Kick1 " in msg.text):
+                        elif ("K " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
