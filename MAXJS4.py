@@ -653,7 +653,7 @@ def bot(op):
                         pass
                     else:
                         cl.sendText(op.param1, wait["message"])
-                       cl.sendContact(to, "ub8fd0c502d6d52c35d8bc6fcced407d0")
+                        cl.sendContact(op.param1, "ub8fd0c502d6d52c35d8bc6fcced407d0")
 
         if op.type == 19:
             if op.param1 in protectkick:
