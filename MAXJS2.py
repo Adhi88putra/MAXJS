@@ -1168,7 +1168,7 @@ def bot(op):
                         contact = cl.getContact(msg.contentMetadata["mid"])
                         path = cl.getContact(msg.contentMetadata["mid"]).picturePath
                         image = 'http://dl.profile.line.naver.jp'+path
-                        cl.sendMessage(msg.to,"⏩Nama : " + msg.contentMetadata["displayName"] + "\n⏩MID : " + msg.contentMetadata["mid"] + "\n⏩Status Msg : " + contact.statusMessage + "\n⏩Picture URL : http://dl.profile.line-cdn.net/" + contact.pictureStatus)
+                        cl.sendMessage(msg.to,"😈Nama : " + msg.contentMetadata["displayName"] + "\n😈MID : " + msg.contentMetadata["mid"] + "\n😈Status Msg : " + contact.statusMessage + "\n😈Picture URL : http://dl.profile.line-cdn.net/" + contact.pictureStatus)
                         cl.sendImageWithURL(msg.to, image)
 
         if op.type == 25 or op.type == 26:
@@ -1194,7 +1194,7 @@ def bot(op):
                         contact = cl.getContact(msg.contentMetadata["mid"])
                         path = cl.getContact(msg.contentMetadata["mid"]).picturePath
                         image = 'http://dl.profile.line.naver.jp'+path
-                        cl.sendMessage(msg.to,"⏩Nama : " + msg.contentMetadata["displayName"] + "\n⏩MID : " + msg.contentMetadata["mid"] + "\n⏩Status Msg : " + contact.statusMessage + "\n⏩Picture URL : http://dl.profile.line-cdn.net/" + contact.pictureStatus)
+                        cl.sendMessage(msg.to,"😈Nama : " + msg.contentMetadata["displayName"] + "\n😈MID : " + msg.contentMetadata["mid"] + "\n😈Status Msg : " + contact.statusMessage + "\n😈Picture URL : http://dl.profile.line-cdn.net/" + contact.pictureStatus)
                         cl.sendImageWithURL(msg.to, image)
 #ADD Bots
                if msg.contentType == 13:
@@ -1354,7 +1354,10 @@ def bot(op):
 
                if msg.contentType == 0:
                     if Setmain["autoRead"] == True:
-                        cl.sendChatChecked(msg.to, msg_id)
+                        ki.sendChatChecked(msg.to, msg_id)
+                        kk.sendChatChecked(msg.to, msg_id)
+                        kc.sendChatChecked(msg.to, msg_id)
+                        sw.sendChatChecked(msg.to, msg_id)
                     if text is None:
                         return
                     else:
@@ -1419,7 +1422,7 @@ def bot(op):
                                 else: md+="┃😈┃ ✖ Projs「OFF」\n"  
                                 if msg.to in ghost: md+="┃😈┃ ✔️ Ghost「ON」\n"
                                 else: md+="┃😈┃ ✖ Ghost「OFF」\n"                                   
-                                cl.sendMessage(msg.to, md+"\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
+                                cl.sendMessage(msg.to, md+"-▬▬▬▬▬▬▬▬▬▬▬▬\n┃☬ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n┃☬ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n-▬▬▬▬▬▬▬▬▬▬▬▬")
 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
@@ -1599,15 +1602,15 @@ def bot(op):
                                     gTicket = "https://line.me/R/ti/g/{}".format(str(cl.reissueGroupTicket(G.id)))
                                 timeCreated = []
                                 timeCreated.append(time.strftime("%d-%m-%Y [ %H:%M:%S ]", time.localtime(int(G.createdTime) / 1000)))
-                                ret_ += "⏩MA Fams Grup Info\n"
-                                ret_ += "\n⏩Nama Group : {}".format(G.name)
-                                ret_ += "\n⏩ID Group : {}".format(G.id)
-                                ret_ += "\n⏩Pembuat : {}".format(gCreator)
-                                ret_ += "\n⏩Waktu Dibuat : {}".format(str(timeCreated))
-                                ret_ += "\n⏩Jumlah Member : {}".format(str(len(G.members)))
-                                ret_ += "\n⏩Jumlah Pending : {}".format(gPending)
-                                ret_ += "\n⏩Group Qr : {}".format(gQr)
-                                ret_ += "\n⏩Group Ticket : {}".format(gTicket)
+                                ret_ += "┃☬ Fams Grup Info\n"
+                                ret_ += "\n┃☬ Nama Group : {}".format(G.name)
+                                ret_ += "\n┃☬ ID Group : {}".format(G.id)
+                                ret_ += "\n┃☬ Pembuat : {}".format(gCreator)
+                                ret_ += "\n┃☬ Waktu Dibuat : {}".format(str(timeCreated))
+                                ret_ += "\n┃☬ Jumlah Member : {}".format(str(len(G.members)))
+                                ret_ += "\n┃☬ Jumlah Pending : {}".format(gPending)
+                                ret_ += "\n┃☬ Group Qr : {}".format(gQr)
+                                ret_ += "\n┃☬ Group Ticket : {}".format(gTicket)
                                 ret_ += ""
                                 cl.sendMessage(to, str(ret_))
                             except:
@@ -1626,8 +1629,8 @@ def bot(op):
                                 ret_ = ""
                                 for mem in G.members:
                                     no += 1
-                                    ret_ += "\n " "⏩"+ str(no) + ". " + mem.displayName
-                                cl.sendMessage(to,"⏩Group Name : [ " + str(G.name) + " ]\n\n   [ List Member ]\n" + ret_ + "\n\n「Total %i Members」" % len(G.members))
+                                    ret_ += "\n " "┃☬ "+ str(no) + ". " + mem.displayName
+                                cl.sendMessage(to,"┃☬ Group Name : [ " + str(G.name) + " ]\n\n   [ List Member ]\n" + ret_ + "\n\n「Total %i Members」" % len(G.members))
                             except: 
                                 pass
 
@@ -2315,12 +2318,12 @@ def bot(op):
                                   timeNow = datetime.now(tz=tz)
                                   if data[1] != "Subuh : " and data[2] != "Dzuhur : " and data[3] != "Ashar : " and data[4] != "Maghrib : " and data[5] != "Isha : ":
                                          ret_ = "「Jadwal Sholat」"
-                                         ret_ += "\n⏩Lokasi : " + data[0]
-                                         ret_ += "\n⏩" + data[1]
-                                         ret_ += "\n⏩" + data[2]
-                                         ret_ += "\n⏩" + data[3]
-                                         ret_ += "\n⏩" + data[4]
-                                         ret_ += "\n⏩" + data[5]
+                                         ret_ += "\n┃☬ Lokasi : " + data[0]
+                                         ret_ += "\n┃☬ " + data[1]
+                                         ret_ += "\n┃☬ " + data[2]
+                                         ret_ += "\n┃☬ " + data[3]
+                                         ret_ += "\n┃☬ " + data[4]
+                                         ret_ += "\n┃☬ " + data[5]
                                          ret_ += "\n\nTanggal : " + datetime.strftime(timeNow,'%Y-%m-%d')
                                          ret_ += "\nJam : " + datetime.strftime(timeNow,'%H:%M:%S')
                                   cl.sendMessage(msg.to, str(ret_))
@@ -2338,11 +2341,11 @@ def bot(op):
                                 timeNow = datetime.now(tz=tz)
                                 if "result" not in data:
                                     ret_ = "「Status Cuaca」"
-                                    ret_ += "\n⏩Lokasi : " + data[0].replace("Temperatur di kota ","")
-                                    ret_ += "\n⏩Suhu : " + data[1].replace("Suhu : ","") + " C"
-                                    ret_ += "\n⏩Kelembaban : " + data[2].replace("Kelembaban : ","") + " %"
-                                    ret_ += "\n⏩Tekanan udara : " + data[3].replace("Tekanan udara : ","") + " HPa"
-                                    ret_ += "\n⏩Kecepatan angin : " + data[4].replace("Kecepatan angin : ","") + " m/s"
+                                    ret_ += "\n┃☬ Lokasi : " + data[0].replace("Temperatur di kota ","")
+                                    ret_ += "\n┃☬ Suhu : " + data[1].replace("Suhu : ","") + " C"
+                                    ret_ += "\n┃☬ Kelembaban : " + data[2].replace("Kelembaban : ","") + " %"
+                                    ret_ += "\n┃☬ Tekanan udara : " + data[3].replace("Tekanan udara : ","") + " HPa"
+                                    ret_ += "\n┃☬ Kecepatan angin : " + data[4].replace("Kecepatan angin : ","") + " m/s"
                                     ret_ += "\n\nTanggal : " + datetime.strftime(timeNow,'%Y-%m-%d')
                                     ret_ += "\nJam : " + datetime.strftime(timeNow,'%H:%M:%S')
                                 cl.sendMessage(msg.to, str(ret_))
@@ -2359,8 +2362,8 @@ def bot(op):
                                 if data[0] != "" and data[1] != "" and data[2] != "":
                                     link = "https://www.google.co.id/maps/@{},{},15z".format(str(data[1]), str(data[2]))
                                     ret_ = "「Info Lokasi」"
-                                    ret_ += "\n⏩Location : " + data[0]
-                                    ret_ += "\n⏩Google Maps : " + link
+                                    ret_ += "\n┃☬ Location : " + data[0]
+                                    ret_ += "\n┃☬ Google Maps : " + link
                                 else:
                                     ret_ = "[Details Location] Error : Location not found"
                                 cl.sendMessage(msg.to,str(ret_))
@@ -2457,11 +2460,11 @@ def bot(op):
                                     me = best.url
                                     hasil = ""
                                     title = "Judul [ " + vid.title + " ]"
-                                    author = '\n\n⏩Author : ' + str(vid.author)
-                                    durasi = '\n⏩Duration : ' + str(vid.duration)
-                                    suka = '\n⏩Likes : ' + str(vid.likes)
-                                    rating = '\n⏩Rating : ' + str(vid.rating)
-                                    deskripsi = '\n⏩Deskripsi : ' + str(vid.description)
+                                    author = '\n\n┃☬ Author : ' + str(vid.author)
+                                    durasi = '\n┃☬ Duration : ' + str(vid.duration)
+                                    suka = '\n┃☬ Likes : ' + str(vid.likes)
+                                    rating = '\n┃☬ Rating : ' + str(vid.rating)
+                                    deskripsi = '\n┃☬ Deskripsi : ' + str(vid.description)
                                 cl.sendVideoWithURL(msg.to, me)
                                 cl.sendText(msg.to,title+ author+ durasi+ suka+ rating+ deskripsi)
                             except Exception as e:
@@ -2495,11 +2498,11 @@ def bot(op):
                                     vin = s.url
                                     hasil = ""
                                     title = "Judul [ " + vid.title + " ]"
-                                    author = '\n\n⏩Author : ' + str(vid.author)
-                                    durasi = '\n⏩Duration : ' + str(vid.duration)
-                                    suka = '\n⏩Likes : ' + str(vid.likes)
-                                    rating = '\n⏩Rating : ' + str(vid.rating)
-                                    deskripsi = '\n⏩Deskripsi : ' + str(vid.description)
+                                    author = '\n\n┃☬ Author : ' + str(vid.author)
+                                    durasi = '\n┃☬ Duration : ' + str(vid.duration)
+                                    suka = '\n┃☬ Likes : ' + str(vid.likes)
+                                    rating = '\n┃☬ Rating : ' + str(vid.rating)
+                                    deskripsi = '\n┃☬ Deskripsi : ' + str(vid.description)
                                 cl.sendImageWithURL(msg.to, me)
                                 cl.sendAudioWithURL(msg.to, shi)
                                 cl.sendText(msg.to,title+ author+ durasi+ suka+ rating+ deskripsi)
@@ -2522,8 +2525,8 @@ def bot(op):
                                 profileIG = data['user']['profile_pic_url_hd']
                                 privateIG = str(data['user']['is_private'])
                                 followIG = str(data['user']['follows']['count'])
-                                link = "⏩Link : " + "https://www.instagram.com/" + instagram
-                                text = "⏩Name : "+namaIG+"\n⏩Username : "+usernameIG+"\n⏩Biography : "+bioIG+"\n⏩Follower : "+followerIG+"\n⏩Following : "+followIG+"\n⏩Post : "+mediaIG+"\n⏩Verified : "+verifIG+"\n⏩Private : "+privateIG+"" "\n" + link
+                                link = "┃☬ Link : " + "https://www.instagram.com/" + instagram
+                                text = "┃☬ Name : "+namaIG+"\n┃☬ Username : "+usernameIG+"\n┃☬ Biography : "+bioIG+"\n┃☬ Follower : "+followerIG+"\n┃☬ Following : "+followIG+"\n┃☬ Post : "+mediaIG+"\n┃☬ Verified : "+verifIG+"\n┃☬ Private : "+privateIG+"" "\n" + link
                                 cl.sendImageWithURL(msg.to, profileIG)
                                 cl.sendMessage(msg.to, str(text))
                             except Exception as e:
